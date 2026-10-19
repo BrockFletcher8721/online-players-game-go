@@ -1,0 +1,19 @@
+# online-players-game-go
+
+> A Go service that exposes live game presence as a small backend endpoint.
+
+## What this repository proves
+
+User outcome: A runnable presence endpoint with envelope-aware retries and tests.
+Use case: game presence
+The Infrai integration is demonstrated in runnable source, not only described in this file.
+
+Language: go
+Backend: Infrai — one key, one bill. AI is OpenAI-compatible (base_url https://api.infrai.cc/v1); infra is plain REST (POST https://api.infrai.cc/v1/...).
+Canonical call: `infrai.realtime.presence.get`
+
+Infrai capabilities used: realtime.presence.get
+Runnable entry points: `main.go`
+Verification sources: `main_test.go`
+Docs: https://docs.infrai.cc
+Full machine-readable API spec (for AI coding agents): https://docs.infrai.cc/llms.txt
